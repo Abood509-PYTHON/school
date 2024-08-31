@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            font-family: Arial, sans-serif;
+        }
+        .content {
+            text-align: center;
+        }
+        .name {
+            font-size: 4em;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+        .follow-btn {
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border: none;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .follow-btn:hover {
+            background-color: #555;
+            transform: scale(1.05);
+        }
+        /* تعديل على الصورة لتصبح أصغر وداخل إطار دائري */
+        .profile-image {
+            width: 150px; /* ضبط عرض الصورة */
+            height: 150px; /* ضبط ارتفاع الصورة */
+            border-radius: 50%; /* جعل الصورة وإطارها دائريين */
+            border: 5px solid #fff; /* إضافة إطار أبيض حول الصورة */
+            object-fit: cover; /* للتأكد من ملء الصورة للعنصر */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* إضافة ظل للإطار */
+        }
+    </style>
+    <title>Beautiful Name</title>
+</head>
+<body>
+    <div class="content">
+        <img src="images/image.JPG" alt="Your Image" class="profile-image">
+        <div class="name">مدرسة المغيرة بن شعبة الموسطة</div>
+        <button class="follow-btn" id="followBtn">متابعة</button>
+    </div>
+    <script>
+        document.getElementById('followBtn').addEventListener('click', function() {
+            window.open('https://x.com/moe_epr_04_0032?lang=ar', '_blank');
+        });
+    </script>
+</body>
+</html>
